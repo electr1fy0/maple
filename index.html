@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="output.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -65,7 +65,7 @@
     </nav>
     <section>
         <div class="relative h-screen">
-            <video autoplay muted class="absolute inset-0 bg-black/20 w-full h-full object-cover">
+            <video autoplay muted class="absolute inset-0  bg-black/20 w-full h-full object-cover">
                 <source src="assets/video.mp4" type="video/mp4">
             </video>
             <div
@@ -90,17 +90,20 @@
             </div>
         </div>
     </section>
+
     <!-- hero 2 -->
-    <section class="w-full h-screen pt-5 ">
-        <div class="relative h-full flex flex-col items-center ">
+    <section class="pt-5 bg-[#E5E5E5] my-4">
+        <div class="relative flex flex-col items-center ">
             <div class="text-center z-10 pt-10">
-                <h1 class="text-6xl mb-4 text-black">
+                <h1 class="md:text-6xl text-4xl mb-4 text-black">
                     <span class="font-medium">iPhone 17</span>
                     <span class="font-light"> Air</span>
                 </h1>
-                <h2 class="text-3xl text-black">Oh. So. Thin.</h2>
+                <h2 class="md:text-3xl text-2xl text-black">Oh. So. Thin.</h2>
             </div>
-            <div class="absolute bottom-24 z-10 space-x-6">
+
+            <img src="assets/air_gold.png" alt="Maple Phone 17 Air" class=" w-full my-10 mb-32">
+            <div class="absolute bottom-14 z-10 space-x-6">
                 <button class="text-md py-2 text-white bg-blue-500 hover:bg-blue-600 rounded-full px-6">
                     Learn more
                 </button>
@@ -108,166 +111,173 @@
                     Buy
                 </button>
             </div>
-            <img src="assets/air_gold.png" alt="Maple Phone 17 Air" class="absolute w-full h-full object-cover ">
         </div>
-    </section>
+        <!-- </bentos> -->
 
 
-    <section class="mx-auto px-3 py-8">
-        <div class="grid grid-cols-2 gap-4">
+        <section class="mx-auto md:px-3 py-8 relative">
+            <div class="grid md:grid-cols-2 gap-4 ">
 
-            <!-- Watch -->
-            <div class="h-[600px] bg-[url('assets/watch-2.png')] bg-cover bg-center text-white">
-                <div class="pt-8  h-full">
-                    <h3 class="text-4xl flex items-center mx-8 font-semibold mb-4 text-white justify-center">
-                        <img src="assets/maple-logo.svg" alt="Maple" class="size-8 mx-2 mb-1 w-auto" />
-                        Watch
-                    </h3>
+                <!-- Watch -->
+                <div
+                    class=" bg-[url('assets/watch-2.png')] bg-cover bg-center w-full min-h-[480px] text-white hover:scale-[101%] duration-300">
+                    <div class="pt-8  ">
+                        <h3
+                            class="md:text-3xl text-2xl flex items-center mx-8 font-semibold mb-2  text-white justify-center">
+                            <img src="assets/maple-logo.svg" alt="Maple" class="md:size-8 size-6 mx-1 mb-1 w-auto" />
+                            WATCH
+                        </h3>
 
-                    <p class="text-xl mx-8 text-[#F5F5F7] flex justify-center font-light px-32 text-center">
-                        United by rhythm. Discover the new Black Unity watch strap and face.
-                    </p>
+                        <p
+                            class="md:text-xl text-lg mx-8 text-[#F5F5F7] flex justify-center font-light leading-6 text-center">
+                            United by rhythm. Discover the new <br>Black Unity watch strap and face.
+                        </p>
 
-                    <div class="flex justify-center my-3">
-                        <button
-                            class="text-sm px-5 font-light border-white border py-2 text-black bg-white rounded-full hover:bg-gray-50">
-                            Buy
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- mba -->
-            <div class="bg-[#F5F5F7] h-[600px] group cursor-pointer product-container">
-                <div class="p-8 text-center">
-                    <h3 class="text-4xl font-semibold mb-2  text-black">MacBook Air</h3>
-                    <p class="text-xl font-light text-[#1D1D1F] ">Supercharged by M3</p>
-                    <div class="flex justify-center my-4 gap-4">
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
-                            Learn More
-                        </button>
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
-                            Buy
-                        </button>
+                        <div class="flex justify-center my-3">
+                            <button
+                                class="text-sm px-5 font-light border-white border py-2 text-black bg-white rounded-full hover:bg-gray-50">
+                                Buy
+                            </button>
+                        </div>
                     </div>
                 </div>
 
-                <div class="product-image">
-                    <img src="assets/macbook-air.png" alt="MacBook Air">
-                </div>
-            </div>
+                <!-- mba -->
+                <div
+                    class="bg-[#F5F5F7] min-h-[440-px] group cursor-pointer product-container hover:scale-[101%] duration-300">
+                    <div class="pt-8 text-center">
+                        <h3 class="md:text-4xl text-3xl font-semibold mb-2  text-black">MacBook Air</h3>
+                        <p class="md:text-xl text-lg font-light text-[#1D1D1F] ">Lean. Mean. M3 Machine</p>
+                        <div class="flex justify-center my-4 gap-4">
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
+                                Learn More
+                            </button>
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
 
-
-            <!--ipad-->
-            <div class="h-[600px] bg-[url('assets/ipad.png')] bg-cover bg-center text-white flex flex-col justify-start">
-                <div class="pt-12 text-center">
-                    <h3 class="text-4xl font-semibold mb-4">
-                        iPad Pro
-                    </h3>
-
-                    <p class="text-xl text-[#F5F5F7] px-32 font-light">
-                        Unbelievably thin. Incredibly powerful.
-                    </p>
-
-                    <div class="flex justify-center my-4 gap-4">
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
-                            Learn More
-                        </button>
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
-                            Buy
-                        </button>
+                    <div class="pb-4 sm:pb-0">
+                        <img src="assets/macbook-air.png" alt="MacBook Air">
                     </div>
                 </div>
-            </div>
 
 
+                <!--ipad-->
 
-            <!-- Vision Pro -->
-            <div class="bg-[#F5F5F7] h-[600px] group cursor-pointer product-container text-center">
-                <div class="p-8">
-                    <h3 class="text-4xl flex items-center mx-8 font-semibold mb-3  justify-center">
-                        <img src="assets/maple-logo-black.svg" alt="Maple" class="size-8 mx-2  w-auto" />
-                        Vision Pro
-                    </h3>
-                    <p class="text-xl font-light text-[#1D1D1F] ">Welcome to the era of spatial computing.</p>
-                    <div class="flex justify-center my-4 gap-4">
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
-                            Learn More
-                        </button>
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
-                            Buy
-                        </button>
-                    </div>                </div>
-                <div class="product-image">
-                    <img src="assets/vision-pro.png" alt="Vision Pro">
-                </div>
-            </div>
+                <div
+                    class="h-[600px] bg-[url('assets/ipad.png')] bg-cover  bg-black bg-center text-white flex flex-col justify-start hover:scale-[101%] duration-300">
+                    <div class="pt-12 text-center">
+                        <h3 class="text-4xl font-semibold mb-2">
+                            iPad Pro
+                        </h3>
 
-  <!--ipad-->
-  <div class="h-[600px] bg-[url('assets/ipad.png')] bg-cover bg-center text-white flex flex-col justify-start">
-    <div class="pt-12 text-center">
-        <h3 class="text-4xl font-semibold mb-2">
-            MacBook Pro
-        </h3>
+                        <p class="text-xl text-[#F5F5F7]  font-light">
+                            Unbelievably thin. Incredibly powerful.
+                        </p>
 
-        <p class="text-xl text-[#F5F5F7] px-32 font-light">
-           A work of smart.
-        </p>
-
-        <div class="flex justify-center my-4 gap-4">
-            <button
-                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
-                Learn More
-            </button>
-            <button
-                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
-                Buy
-            </button>
-        </div>
-    </div>
-</div>
-
-
-            <div class="h-[600px] bg-[url('assets/airpods.png')] bg-cover bg-center text-white flex flex-col justify-end">
-                <div class="pb-8 text-center">
-                    <h3 class="text-4xl font-semibold mb-3">
-                        Airpods 4
-                    </h3>
-
-                    <p class="text-xl text-[#F5F5F7] px-32 font-light">
-                        Iconic. Now supersonic. <br>
-                        Available with Active Noise Cancellation.
-                    </p>
-
-                    <div class="flex justify-center my-4 gap-4">
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
-                            Learn More
-                        </button>
-                        <button
-                            class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
-                            Buy
-                        </button>
+                        <div class="flex justify-center my-4 gap-4">
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
+                                Learn More
+                            </button>
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
+                                Buy
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-    </section>
 
-    <footer class="text-neutral-600 font-light text-sm px-8 pb-4">
-        Please view only on desktop. This website was made within a couple hours.
-        No templates were used. AI was involved but mostly against me. I had to rebuild things myself again.<br>
-        I did not have enough time to make this website responsive or pay attention to the the details that I otherwise
-        would have as I had a lab CAT to prepare for.<br>
-        I enjoyed it. Cheers!<br>
 
-    </footer>
+                <!-- Vision Pro -->
+                <div
+                    class="bg-[#F5F5F7]  group cursor-pointer product-container text-center hover:scale-[101%] duration-300">
+                    <div class="pt-8 px-8 ">
+                        <h3 class="text-4xl flex items-center mx-8 font-semibold mb-3  justify-center">
+                            <img src="assets/maple-logo-black.svg" alt="Maple" class="size-8 mx-2  w-auto" />
+                            Vision Pro
+                        </h3>
+                        <p class="text-xl font-light text-[#1D1D1F] ">Welcome to the era of spatial computing.</p>
+                        <div class="flex justify-center my-4 gap-4">
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
+                                Learn More
+                            </button>
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                    <div class="">
+                        <img src="assets/vision-pro.png" alt="Vision Pro">
+                    </div>
+                </div>
+
+                <!--ipad-->
+                <div
+                    class="h-[600px] bg-[url('assets/mac-pro.png')] bg-cover bg-black bg-center text-white flex flex-col justify-start hover:scale-[101%] duration-300">
+                    <div class="pt-12 text-center">
+                        <h3 class="text-4xl font-semibold mb-2">
+                            MacBook Pro
+                        </h3>
+
+                        <p class="text-xl text-[#F5F5F7] px-32 font-light">
+                            A work of smart.
+                        </p>
+
+                        <div class="flex justify-center my-4 gap-4">
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
+                                Learn More
+                            </button>
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div
+                    class="h-[600px] bg-[url('assets/airpods.png')] bg-cover bg-center text-white flex flex-col justify-end hover:scale-[101%] duration-300">
+                    <div class="pb-8 text-center">
+                        <h3 class="text-4xl font-semibold mb-3">
+                            Airpods 4
+                        </h3>
+
+                        <p class="sm:text-xl text-lg text-[#F5F5F7] font-light">
+                            Iconic. Now supersonic. <br>
+                            Available with Active Noise Cancellation.
+                        </p>
+
+                        <div class="flex justify-center my-4 gap-4">
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 bg-blue-500 border py-2 text-[#F5F5F7] rounded-full hover:bg-blue-400">
+                                Learn More
+                            </button>
+                            <button
+                                class="text-sm px-5 font-light border-blue-500 border py-2 text-blue-500 hover:text-white rounded-full hover:bg-blue-500">
+                                Buy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+
+        <footer class="text-neutral-600 font-light text-sm px-8 pb-4">
+
+
+            Update: Made (somewhat) responsive. Added subtle hover effects.
+
+        </footer>
 </body>
 
 </html>
